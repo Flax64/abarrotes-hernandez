@@ -144,12 +144,24 @@
                 <p class="mt-4 text-lg text-gray-500">Estamos cerca de ti.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <!-- Mapa de Google -->
+
+                <!-- MAPA DE GOOGLE -->
                 <div class="w-full h-80 bg-gray-300 rounded-lg overflow-hidden shadow-md">
+                    <!-- 
+                    ======================================================================
+                    INSTRUCCIONES PARA PEGAR TU MAPA:
+                    
+                    1. Ve a Google Maps y busca el punto exacto de tu negocio.
+                    2. Haz clic en "Compartir" y luego en "Incorporar un mapa".
+                    3. Copia el código HTML que te da Google (empieza con <iframe...).
+                    4. Borra la etiqueta <iframe> que está aquí abajo y pega la tuya.
+                    5. ¡MUY IMPORTANTE! En tu nuevo código, cambia el 'width' a "100%" y el 'height' a "100%".
+                    ======================================================================
+                    -->
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14392.366205847493!2d-100.957544!3d25.545837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8688134eb9bd0a3b%3A0x1d4e1d5a7d5b1d!2sParajes%20de%20los%20Pinos%2C%20Ramos%20Arizpe%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.1998315244246!2d-100.97999139999999!3d25.531719700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868813554f61707d%3A0xa8b9bcd619c86a6b!2sPino%20Acapulco%20268%2C%20Parajes%20de%20los%20Pinos%2C%2025905%20Ramos%20Arizpe%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1789781908016!5m2!1ses-419!2smx"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        referrerpolicy="strict-origin-when-cross-origin">
                     </iframe>
                 </div>
 
@@ -174,7 +186,6 @@
                         </div>
                         <div>
                             <h4 class="text-xl font-bold text-gray-900 mb-1">Horario de Atención</h4>
-                            <!-- Texto que no hace saltos de línea (whitespace-nowrap) -->
                             <p class="text-gray-600 whitespace-nowrap">
                                 Lunes - Viernes: 8:00 am - 10:00 pm
                             </p>
@@ -189,6 +200,13 @@
     <footer class="bg-gray-900 text-white py-8 text-center">
         <p>&copy; 2026 Abarrotes Hernandes. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/521XXXXXXXXXX" target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50 animate-pulse">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
 </body>
 
 </html>
